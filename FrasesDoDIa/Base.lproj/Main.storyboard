@@ -1,24 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FrasesDoDIa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="L2w-Ba-h2f">
+                                <rect key="frame" x="67" y="20" width="240" height="140"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsd-IF-i0w">
+                                <rect key="frame" x="136" y="184" width="102" height="41"/>
+                                <color key="backgroundColor" red="0.36427223679999998" green="0.57347875829999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Nova Frase">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="newMessageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a1I-V4-rSA"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-esquerda.png" translatesAutoresizingMaskIntoConstraints="NO" id="52I-R3-8tK">
+                                <rect key="frame" x="16" y="239" width="57" height="54"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIs-Nc-QEo">
+                                <rect key="frame" x="16" y="312" width="343" height="134"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-direita.png" translatesAutoresizingMaskIntoConstraints="NO" id="LX9-gw-Yh0">
+                                <rect key="frame" x="303" y="464" width="56" height="55"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AIs-Nc-QEo" firstAttribute="top" secondItem="52I-R3-8tK" secondAttribute="bottom" constant="19" id="Eca-mu-pQ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LX9-gw-Yh0" secondAttribute="trailing" constant="16" id="Edd-JS-Qky"/>
+                            <constraint firstItem="L2w-Ba-h2f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="FZ4-Ji-UQL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L2w-Ba-h2f" secondAttribute="trailing" constant="68" id="Mr9-nO-qvz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LX9-gw-Yh0" secondAttribute="bottom" constant="148" id="NXs-bX-2Gj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AIs-Nc-QEo" secondAttribute="trailing" constant="16" id="TvQ-A4-RoB"/>
+                            <constraint firstItem="Lsd-IF-i0w" firstAttribute="top" secondItem="L2w-Ba-h2f" secondAttribute="bottom" constant="24" id="WHA-4H-bPD"/>
+                            <constraint firstItem="52I-R3-8tK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="239" id="Zf4-K1-nnh"/>
+                            <constraint firstItem="Lsd-IF-i0w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="aN6-d1-vty"/>
+                            <constraint firstItem="52I-R3-8tK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mBA-kC-h42"/>
+                            <constraint firstItem="L2w-Ba-h2f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="nxk-9y-CFa"/>
+                            <constraint firstItem="AIs-Nc-QEo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qoB-1V-ygR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lsd-IF-i0w" secondAttribute="trailing" constant="137" id="ymX-T9-YRI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageDayLabel" destination="AIs-Nc-QEo" id="bUn-DQ-01p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="101.59999999999999" y="103.89805097451276"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aspas-direita.png" width="56" height="55"/>
+        <image name="aspas-esquerda.png" width="57" height="54"/>
+        <image name="logo.png" width="253" height="140"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

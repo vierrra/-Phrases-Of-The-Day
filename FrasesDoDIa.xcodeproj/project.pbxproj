@@ -15,6 +15,9 @@
 		883F869F25AAAFC400EB4A47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883F869D25AAAFC400EB4A47 /* LaunchScreen.storyboard */; };
 		883F86AA25AAAFC500EB4A47 /* FrasesDoDIaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F86A925AAAFC500EB4A47 /* FrasesDoDIaTests.swift */; };
 		883F86B525AAAFC500EB4A47 /* FrasesDoDIaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F86B425AAAFC500EB4A47 /* FrasesDoDIaUITests.swift */; };
+		883F86C925AAB04D00EB4A47 /* aspas-esquerda.png in Resources */ = {isa = PBXBuildFile; fileRef = 883F86C625AAB04D00EB4A47 /* aspas-esquerda.png */; };
+		883F86CA25AAB04D00EB4A47 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 883F86C725AAB04D00EB4A47 /* logo.png */; };
+		883F86CB25AAB04D00EB4A47 /* aspas-direita.png in Resources */ = {isa = PBXBuildFile; fileRef = 883F86C825AAB04D00EB4A47 /* aspas-direita.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		883F86B025AAAFC500EB4A47 /* FrasesDoDIaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrasesDoDIaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		883F86B425AAAFC500EB4A47 /* FrasesDoDIaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrasesDoDIaUITests.swift; sourceTree = "<group>"; };
 		883F86B625AAAFC500EB4A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883F86C625AAB04D00EB4A47 /* aspas-esquerda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aspas-esquerda.png"; sourceTree = "<group>"; };
+		883F86C725AAB04D00EB4A47 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		883F86C825AAB04D00EB4A47 /* aspas-direita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aspas-direita.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 				883F869625AAAFC300EB4A47 /* ViewController.swift */,
 				883F869825AAAFC300EB4A47 /* Main.storyboard */,
 				883F869B25AAAFC400EB4A47 /* Assets.xcassets */,
+				883F86C525AAB04D00EB4A47 /* Assets */,
 				883F869D25AAAFC400EB4A47 /* LaunchScreen.storyboard */,
 				883F86A025AAAFC400EB4A47 /* Info.plist */,
 			);
@@ -127,6 +134,16 @@
 			);
 			path = FrasesDoDIaUITests;
 			sourceTree = "<group>";
+		};
+		883F86C525AAB04D00EB4A47 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				883F86C625AAB04D00EB4A47 /* aspas-esquerda.png */,
+				883F86C725AAB04D00EB4A47 /* logo.png */,
+				883F86C825AAB04D00EB4A47 /* aspas-direita.png */,
+			);
+			path = Assets;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -231,9 +248,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				883F86C925AAB04D00EB4A47 /* aspas-esquerda.png in Resources */,
+				883F86CA25AAB04D00EB4A47 /* logo.png in Resources */,
 				883F869F25AAAFC400EB4A47 /* LaunchScreen.storyboard in Resources */,
 				883F869C25AAAFC400EB4A47 /* Assets.xcassets in Resources */,
 				883F869A25AAAFC300EB4A47 /* Main.storyboard in Resources */,
+				883F86CB25AAB04D00EB4A47 /* aspas-direita.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
